@@ -35,8 +35,10 @@ let isUpdate = false, updateId
 
 
 addBox.addEventListener('click', ()=> {
+    popText.innerText = "Add Note"
+    addNoteBtn.innerText = "Add a New Note"
     tittleTag.focus();
-    popupBox.classList.add("show")
+    popupBox.classList.add("show");
 })
 
 
@@ -66,12 +68,12 @@ function showNotes() {
 
                                 <ul class="menu">
                                     <li onclick="updateNote(${index}, '${note.tittle}', '${note.description}')" class="edit">
-                                    <i class="fa-solid fa-pen menu-icon"></i>
-                                    <p>Edit</p>
+                                        <i class="fa-solid fa-pen menu-icon"></i>
+                                        <p>Edit</p>
                                     </li>
                                     <li onclick="deleteNote(${index})" class="delete">
-                                    <i class="fa-solid fa-trash menu-icon"></i>
-                                    <p>Delete</p>
+                                        <i class="fa-solid fa-trash menu-icon"></i>
+                                        <p>Delete</p>
                                     </li>
                                 </ul>
                             </div>
